@@ -1,0 +1,121 @@
+body{
+	padding: 0;
+	background-image:url("./../css/img/sfondo/sfondo_login.png");
+}
+
+hr{
+	height: 5px;
+	width: 60%;
+	background-color: rgba(100, 100, 100, 0.4);
+	border-radius: 12px;
+	margin-top: 1%;
+	border: none;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+#fieldset_register{
+	display: none; 
+}
+
+.class_fieldset{
+	margin: 0 auto;
+	margin-top: 5%;
+	border-radius: 12px;
+	color: white;
+	width: 30%;
+	background-color: rgba(100, 100, 100, 0.4);
+	padding: 3%;
+}
+
+#div_header_login{
+	margin: 0 auto;
+	margin-top: 5%;
+	font-size: 40pt;
+	font-weight: bold;
+	text-align: center;
+	border-color: black;
+	border-width: 5px;
+	color: white;
+	width: 40%;
+}
+
+.class_form{
+	text-align: center;
+	border-radius: 10px;
+	display: block;
+	width: 90%;
+	margin-top: 10px;
+	border: 0;
+	padding: 10px;
+	background-color: white;
+	font-size: 16px;
+}
+
+#div_login_form input[type="submit"], #div_register_form input[type="submit"]{
+	background-color: blue;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+	margin-left:5%;
+	cursor: pointer;
+}
+
+p{
+	background-color: white;
+	margin-left: 35%;
+	color: blue;
+	height: 20px;
+	width: 30%;
+	font-size: 15px;
+	text-align: center;
+	border-radius: 10px;
+	border: none;
+}
+
+#buttonToRegister:hover{
+	cursor: pointer;
+}
+
+img{
+	position: absolute;
+	height: 350px;
+}
+
+#marco{
+	left: 10%;
+}
+
+#tarma{
+	left: 80%;
+	top: 30%;
+}
+
+#eri{
+	left: 30%;
+	top: 35%;
+}
+
+#fio{
+	left: 55%;
+}
+
+a{
+	background-color: white;
+	color: blue;
+	height: 20px;
+	font-size: 15px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+a:hover,p:hover{
+	background-color: blue;
+	color: white;
+}
+
+footer{
+	width: 20%;
+	margin: 0 auto;
+	text-align: center;
+}

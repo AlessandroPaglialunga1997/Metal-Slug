@@ -1,0 +1,347 @@
+body{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-image: url("./img/sfondo/sfondo_body.jpg");
+}
+
+.playgroundWrapper_class{
+	margin-top:;
+	padding:0px;
+  	background-color: black;
+  	border-radius:30px;
+
+}
+
+.playground_class{
+	margin-top: 50px;
+	position: absolute;
+	-webkit-transition: opacity 3s;
+}
+
+.player_class{
+	transform: scaleX(1);
+	position: absolute;
+	height: 38px;
+	width: 25px;
+}
+
+.soldier_class{
+	position: absolute;
+	height: 38px;
+	width: 25px;
+}
+
+.side{
+	position: absolute;
+	background-color: black;
+	margin-top: 1%;
+}
+
+.bullet{
+	position: absolute;
+	height: 6px;
+	width: 6px;
+	border-radius:3px;
+	background:orange;
+	border:1px solid red;    
+    border-radius:50%;
+}
+
+.bomb{
+	position: absolute;
+}
+
+.explosion_class{
+	position: absolute;
+}
+
+#firstBlock{
+	float: left;
+	position: relative;
+	margin-top: 60px;
+}
+
+.numberScore{
+	height: 20px;
+	width:20px;
+	display: none;
+}
+
+#U,#P, #numberPlayer, #dotDot, #numberLife{
+	height: 17px;
+	width: 17px;
+}
+.score_class{
+	margin-left: 8px;
+}
+
+.lifeBar{
+	width: 120px;
+	height: 15px;
+	position: absolute;
+	float: left;
+}
+
+.lifeInfo{
+	margin-top: 5px;
+	margin-left: 15px;
+}
+
+#numberLife{
+	-webkit-transition: width 1s;
+	-webkit-transition: height 1s;
+}
+
+#secondBlock{
+	margin-top: 60px;
+	float: left;
+	position: relative;
+	margin-left: 20px;
+	color: white;
+	border-color: grey;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: white; font-weight: bold; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+#armsLabel{
+	margin-left: 5px;
+}
+
+#bombLabel{
+ 	margin-left: 15px;
+}
+
+#numberBomb2{
+	margin-left: 15px;
+}
+
+.timer_class{
+	margin-top: 60px;
+	float: left;
+	position: relative;
+	margin-left: 40px;
+}
+
+#numberTimer1{
+	height: 45px;
+	width: 35px;
+}
+
+#numberTimer0{
+	height: 45px;
+	width: 35px;
+	margin-left: 1px;
+}
+
+#thirdBlock{
+	position: absolute;
+	float: right;
+	color: white; font-weight: bold; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.info{
+	margin-right: 15px;
+}
+
+#numberCountdown {
+	position: absolute;
+	margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+	height: 100px;
+	width: 80px;
+	border-radius: 20px;
+}
+
+#labelCountdown {
+	position: absolute;
+	margin: auto;
+    top: 130px;
+    left: 20px;
+    right: 0;
+    bottom: 20px;
+	color: white; 
+	height: 30px;
+	width: 500px;
+	font-size: 30px;
+	font-weight: bold; 
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#gameOver{
+	position: absolute;
+	margin: auto;
+    top: 0px;
+    left: 0;
+    right: 0;
+	height: 360px;
+	width: 700px;
+	opacity: 0;
+	-webkit-transition: opacity 3s;
+}
+
+.boss_class{
+	position: absolute;
+	height: 50px;
+	width: 75px;
+}
+
+
+/*DEL PROF*/
+#popup{
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(116,126,138,0.5);
+	position: fixed;
+	z-index: 100;	
+}
+
+#popup a{
+	width: 32px;
+	height: 32px;
+	position: relative;
+	display: block;
+	left: 95%;
+	top: -16px;
+	background: url('./img/close_button.png') no-repeat;
+	z-index: 102
+
+}
+
+#popupContent{
+	width: 30%;
+	height: 50%;
+	min-width: 220px;
+	min-height: 220px;
+	position: relative;
+	left: 35%;
+	top: 20%;
+	background-color: rgba(250,250,210,1);
+	border: 2px solid;
+	border-radius: 5px;
+	box-shadow:0 3px 7px rgba(0,0,0,0.25);
+}
+
+#popupContent div{
+	padding: 3pt;
+	font-weight: bold;
+	text-align: center;
+	font-size: x-large;
+}
+	
+#highScoreText{
+	font-size: xx-large;
+	color: darkred;
+}
+
+#resetButton, #exitButton{
+	background-color: blue;
+	font-size: 15px;
+	height: 35px;
+	width: 100px;
+	border: 2px solid;
+	border-radius: 5px;
+	color: white;
+	margin-top: 20px;
+}
+#exitButton{
+	float: right;
+	margin-right: 40px;
+	cursor: pointer;
+}
+#resetButton{
+	float: left;
+	margin-left: 40px;
+	cursor: pointer;
+}
+
+
+table{
+	margin: 0 auto;
+}
+
+th {
+text-align: center;
+height:15px;
+border-bottom:1px solid #ddd;
+border:1px solid #ddd;
+padding: 0 0 0 5px;
+background-color: blue;
+color:#fff;
+}
+
+tr:hover td{
+	background-color: yellow;
+}
+
+tbody td {
+font-size: 20px;
+text-align: center;
+border-bottom:1px solid #ddd;
+color: green;
+}
+
+tbody{
+	border-bottom:1px solid #ddd;
+}
+
+div.tablewrap{
+	height: 175px;
+	padding-top: 10px; 
+	overflow: scroll;
+	cursor: default;
+	overflow-x: hidden;
+}
+
+#w, #a, #s, #d, #l, #k, #m{
+	margin-top: 2%;
+	height: 3%;
+	width: 3%;
+	margin-left: 5%;
+}
+
+#s_{
+	margin-left: 5%;
+}
+
+#s_, #p_, #a1_, #c_, #e_, #b_, #a2_, #r_{
+	margin-top: 2%;
+	height: 3%;
+	width: 3%;
+}
+
+#labelW, #labelA, #labelS, #labelD, #labelL, #labelK, #labelM, #labelSpaceBar{
+	font-size: 20pt;
+	font-weight: bold;
+	text-align: center;
+	border-color: black;
+	border-width: 5px;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 3px 0 black, 0 -1px black;
+	width: 40%;
+	margin-bottom: 5%;
+}
+
+#commands{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#screen{
+	margin: 0 auto;
+	height: 80%;
+	width:80%;
+	margin-top: 1%;
+	background-color: black;
+	border-radius:30px;
+}
