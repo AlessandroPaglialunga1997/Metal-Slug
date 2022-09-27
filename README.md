@@ -1,2 +1,4 @@
 # Metal Slug
-(Alpha phase)[https://alessandropaglialunga1997.github.io/Metal-Slug/html/]
+
+[Alpha phase](https://alessandropaglialunga1997.github.io/Metal-Slug/html/)
+
