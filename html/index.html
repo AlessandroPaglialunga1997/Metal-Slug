@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang = "it">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Alessandro Paglialunga">
+		<meta name="keywords" content="Metal Slug, Game">
+		<link rel=icon href = "./../css/img/icona.png" sizes="32x32" type="image/png">   		
+		<script src="./../js/game.js"></script>
+		<script src="./../js/player.js"></script>
+		<script src="./../js/util.js"></script>
+		<script src="./../js/sketcher.js"></script>
+		<script src="./../js/bullet.js"></script>
+		<script src="./../js/bomb.js"></script>
+		<script src="./../js/explosion.js"></script>
+		<script src="./../js/soldier.js"></script>
+		<script src="./../js/boss.js"></script>
+		<script src="./../js/popup.js"></script>
+		<script src="./../js/ajax/requestScores.js"></script>
+		<link rel="stylesheet" href="./../css/game.css" type="text/css" media="screen">
+		<title>Metal Slug</title>
+	</head>
+	<body onLoad="begin()">
+		<div id = "screen">	
+			<div id="playgroundWrapper" class="playgroundWrapper_class">
+				<div id="playground0" class = "playground_class"></div>
+				<div id="sideLeft1" class="side"></div>
+				<div id="sideLeft2" class="side"></div>
+				<div id="sideRight1" class="side"></div>
+				<div id="sideRight2" class="side"></div>
+				<div id="firstBlock">
+					<div id="score" class="score_class">
+						<img id="numberScore5" src="./../css/img/number0/number0.png" class="numberScore" alt="Score">
+						<img id="numberScore4" src="./../css/img/number0/number0.png" class="numberScore" alt="Score">
+						<img id="numberScore3" src="./../css/img/number0/number0.png" class="numberScore" alt="Score">
+						<img id="numberScore2" src="./../css/img/number0/number0.png" class="numberScore" alt="Score">
+						<img id="numberScore1" src="./../css/img/number0/number0.png" class="numberScore" alt="Score">
+						<img id="numberScore0" src="./../css/img/number0/number0.png" class="numberScore" alt="Score">
+					</div>
+					<div id="lifeBar_div" class="lifeBar_class">
+						<div id="lifeBar0" class="lifeBar"></div>
+						<div id="lifeBar1" class="lifeBar"></div>
+					</div>
+					<div id="life" class="lifeInfo">
+						<img id="numberPlayer" src="./../css/img/number0/number1.png" alt="P1">
+						<img id="U" src="./../css/img/letters/u.png" alt="U">
+						<img id="P" src="./../css/img/letters/p.png" alt="P">
+						<img id="dotDot" src="./../css/img/number0/number10.png" alt="Dot">
+						<img id="numberLife" alt="NumberLife" src ="./../css/img/number0/number1.png">
+					</div>
+				</div>
+				<div id="secondBlock">
+					<div id="labelThings" class="labelThings_class">
+						<label id="armsLabel">ARMS</label>
+						<label id="bombLabel">BOMB</label>
+					</div>
+					<div id="numberThing" class="numberThing_class">
+						<img id="numberArms3" src = "./../css/img/number0/number0.png" alt="Bullet">
+						<img id="numberArms2" src = "./../css/img/number0/number0.png" alt="Bullet">
+						<img id="numberArms1" src = "./../css/img/number0/number8.png" alt="Bullet">
+						<img id="numberBomb2" src="./../css/img/number0/number0.png" alt="Bomb">
+						<img id="numberBomb1" src="./../css/img/number0/number8.png" alt="Bomb">
+					</div>
+				</div>
+				<div id="timer" class="timer_class">
+					<img id="numberTimer1" src="./../css/img/number0/number6.png" alt = "Timer">
+					<img id="numberTimer0" src="./../css/img/number0/number0.png" alt = "Timer">
+				</div>
+				<div id="thirdBlock">
+					<label id="level" class="info">LEVEL 1</label>
+					<label id="credit" class="info">CREDIT 0</label>
+				</div>
+				<img id="numberCountdown" src="./../css/img/number1/number9.png" style = "display: none" alt = "Countdown">
+				<label id="labelCountdown" style = "display: none">PRESS ENTER TO RESUSCITATE</label>
+				<img id="gameOver" src="./../css/img/GameOver.png" alt = "Game Over">
+				<div id="player" class="player_class">
+					<div id="playerLegs" style="position: absolute;"></div>
+					<div id="playerBust" style="position: absolute;"></div>
+				</div>
+			</div>
+			<div id = "commands">
+				<img src="./../css/img/letters/w.png" id = "w" alt = "letter">
+				<label id = "labelW"> = JUMP</label>
+				<img src="./../css/img/letters/a.png" id = "a" alt = "letter">
+				<label id = "labelA"> = LEFT</label>
+				<img src="./../css/img/letters/s.png" id = "s" alt = "letter">
+				<label id = "labelS"> = DOWN</label>
+				<img src="./../css/img/letters/d.png" id = "d" alt = "letter">
+				<label id = "labelD"> = RIGHT</label>
+				<img src="./../css/img/letters/l.png" id = "l" alt = "letter">
+				<label id = "labelL"> = RELOAD</label>
+				<img src="./../css/img/letters/k.png" id = "k" alt = "letter">
+				<label id = "labelK"> = SHOOT</label>
+				<img src="./../css/img/letters/m.png" id = "m" alt = "letter">
+				<label id = "labelM"> = STAMB</label>
+				<img src="./../css/img/letters/s.png" id = "s_" alt = "letter">
+				<img src="./../css/img/letters/p.png" id = "p_" alt = "letter">
+				<img src="./../css/img/letters/a.png" id = "a1_" alt = "letter">
+				<img src="./../css/img/letters/c.png" id = "c_" alt = "letter">
+				<img src="./../css/img/letters/e.png" id = "e_" alt = "letter">
+				<img src="./../css/img/letters/b.png" id = "b_" alt = "letter">
+				<img src="./../css/img/letters/a.png" id = "a2_" alt = "letter">
+				<img src="./../css/img/letters/r.png" id = "r_" alt = "letter">
+				<label id = "labelSpaceBar"> = BOMB</label>
+			</div>
+		</div>
+	</body>
+</html>
